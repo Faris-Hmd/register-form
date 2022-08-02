@@ -1,0 +1,106 @@
+/** @format */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: var(--font-clr);
+  background-color: var(--back-clr);
+}
+form {
+  background-color: var(--form-clr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: min(800px, 80%);
+  margin: 5em auto;
+  padding: 1em;
+  box-shadow: -2px 2px 5px var(--shadow-clr);
+  accent-color: var(--dark-clr);
+}
+
+form .side {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  width: min(400px, 48%);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.8em 2px;
+  margin-bottom: 1.4em;
+  border: 1.5px solid var(--shadow-clr);
+  border-radius: 0 4px 4px 4px;
+  cursor: pointer;
+}
+form .input-container {
+  width: 47%;
+}
+form label {
+  padding: 0.1em 1.5em;
+  border-radius: 3px 3px 0 0;
+  background-color: var(--light-clr);
+  border: 1.5px solid var(--shadow-clr);
+  border-bottom: none;
+  transition: all 200ms;
+  cursor: pointer;
+}
+form .radio-label {
+  border: 1.5px solid var(--shadow-clr);
+  border-radius: 3px;
+}
+form .radio-label:hover {
+  color: var(--dark-clr);
+  background-color: var(--shadow-clr);
+  border-color: var(--dark-clr);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  width: 47%;
+  font-size: medium;
+  transition: all 300ms;
+  border-radius: 5px;
+}
+.accept {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.submit-btn {
+  color: #eee;
+  border: 1px solid var(--dark-clr);
+  background-color: var(--dark-clr);
+  box-shadow: -3px 3px 5px var(--shadow-clr);
+}
+
+.submit-btn:hover {
+  color: var(--dark-clr);
+  background-color: var(--light-clr);
+}
+
+.reset-btn {
+  border: 1.5px solid rgb(172, 172, 172);
+}
+
+.reset-btn:hover {
+  background-color: rgba(255, 110, 110, 0.214);
+  border-color: rgb(255, 110, 110);
+}
+
+@media (max-width: 800px) {
+  form .side {
+    width: 100%;
+  }
+}

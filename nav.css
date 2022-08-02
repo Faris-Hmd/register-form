@@ -1,0 +1,30 @@
+/** @format */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  background-color: var(--nav-clr);
+  color: #fcfcfc;
+  backdrop-filter: blur(20px);
+}
+nav a,
+.logo {
+  font-size: 1.2rem;
+  padding: 0.6em 1em;
+}
+
+.logo span {
+  color: var(--sec-clr);
+}
+nav a {
+  color: #fcfcfc;
+  transition: all 250ms;
+}
+nav a:hover {
+  background-color: var(--sec-clr);
+}

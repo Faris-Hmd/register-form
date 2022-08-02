@@ -1,0 +1,74 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new student</title>
+  </head>
+  <body>
+    <nav>
+      <a href="table.html">Students Data</a>
+      <div class="logo"><span>EL</span>neelen</div>
+    </nav>
+    <form action="">
+      <div class="side">
+        <div class="input-container">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" placeholder="first name" required />
+        </div>
+        <div class="input-container">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" placeholder="last name" required />
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@emal.com" />
+
+        <label for="ID">ID</label>
+        <input type="number" id="ID" min="1" placeholder="123456789" />
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Password" />
+
+        <label for="re-pass">Re-enter password</label>
+        <input type="password" id="re-pass" placeholder="Re-enter password" />
+      </div>
+      <div class="side">
+        <label for="department">department</label>
+        <select name="department" id="department">
+          <option value="IT">Information tecnology</option>
+          <option value="CS">Computer scinces</option>
+          <option value="SE">Software enngiring</option>
+        </select>
+
+        <div class="input-container">
+          <label for="male" class="radio-label"
+            >Male <input type="radio" name="gender" id="male"
+          /></label>
+        </div>
+        <div class="input-container">
+          <label for="female" class="radio-label"
+            >Female<input type="radio" name="gender" id="female"
+          /></label>
+        </div>
+
+        <label for="date">Birth day</label>
+        <input type="date" name="date" id="date" />
+
+        <div class="accept">
+          Accept all privicy rolls and terms
+          <input type="checkbox" name="accept" id="accept" />
+        </div>
+
+        <input type="reset" value="Reset" class="reset-btn" />
+        <input type="submit" value="Submit" class="submit-btn" />
+      </div>
+    </form>
+  </body>
+</html>

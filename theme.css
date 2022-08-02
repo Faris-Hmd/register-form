@@ -1,0 +1,18 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+.button {
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --font-clr: #333;
+  --form-clr: #f5f5f5;
+  --back-clr: #fdfdfd;
+  --sec-clr: rgb(0, 170, 255);
+  --shadow-clr: #ccc;
+  --light-clr: rgba(27, 114, 255, 0.197);
+  --dark-clr: rgb(27, 115, 255);
+  --nav-clr: rgba(3, 80, 132, 0.717);
+}
